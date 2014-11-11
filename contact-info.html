@@ -1,0 +1,159 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+<title>Contact | Briarwood Croft</title>
+<meta charset="utf-8"/>
+<meta name="description" content="All animals at Briarwood Croft are fed organic, non-GMO grain, pastured on organic, non-GMO grasses, and are watered with fresh-well water."/>
+<meta name="keywords" content="Briarwood, Croft, animals, organic, non-GMO, farm, fresh-well water"/>
+<link type="text/css" rel="stylesheet" href="croft.css"/>
+<script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+<script type="text/javascript" src="formcontrol.js"></script>
+<style type="text/css">
+#contact {
+/*text-decoration:underline;*/
+color:#CC0000;
+font-size:1.25em;
+}
+</style>
+<style type="text/css">
+#house_picture {
+margin-left:20%;
+margin-top:3%;
+border:1px solid black;
+height:22.4em;
+width:45%;
+box-shadow:rgba(0,0,0,0.2) 20px 20px;
+}
+</style>
+<style type="text/css">
+#contact_container p {
+font-size:1.5em;
+}
+.bold {
+font-weight:bold;
+}
+#disablednav {
+border-bottom:1px solid black;
+border-top:0;
+}
+#sheep {
+border-bottom-left-radius:1em;
+border-bottom:1px solid black;
+}
+</style>
+</head>
+<body>
+<div id="navbar">
+<h1 id="croft">Briarwood Croft</h1>
+<div id="imgs">
+<!--Static farm images; non-permanent-->
+<img id="house_picture" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\PA051606.JPG"/>
+</div>
+<nav>
+	<ul id="navbar_list">
+	<li id="home" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\PC101953.JPG"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/home.php">Home</a></li>
+	<li id="about" class="navbar_list_item"><img class="nav_img" src="http://cdn.phillymag.com/wp-content/uploads/2012/08/farm1.jpg"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/about-us.html">About Us</a></li>
+	<li id="pigs" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P4232261.JPG"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/pigs.html">Heritage Pigs</a></li>
+	<li id="chickens" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P5041126.JPG"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/chickens.html">Chickens</a></li>
+	<li id="goats" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P4232251.JPG"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/la-mancha-goats.html">La Mancha Goats</a></li>
+	<li id="sheep" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P4202229.JPG"><a href="">Corriedale Sheep</a></li>
+	<li id="disablednav" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\PA051606.JPG"><span id="contact">Contact Info</span></li>
+	</ul>
+	</nav>
+</div>
+<div id="contact_container">
+<p>Please call us for directions on how to get to our farm.  Because of insurance requirements, <span class="bold">CUSTOMERS ARE ONLY ALLOWED ON THE FARM BY APPOINTMENT.</span></p>
+<p><span class="bold">Our phone number is </span>(610) 562-3338</p>
+<p><span class="bold">Our email address is </span><a href="mailto:briarwoodcroft@gmail.com">briarwoodcroft@gmail.com</a></p>
+<p><span class="bold">Our webmaster's email address is </span><a href="mailto:webmaster@briarwoodcroft.com">webmaster@briarwoodcroft.com</a>.  Please only email the webmaster if you are having problems with the website.  If you wish to recieve information about our products, please use the standard farm email address.  Thank you.</p>
+</div>
+<br>
+<br>
+<div id="footer">
+<div id="footer_data">
+<table id="pages">
+<tbody>
+<tr>
+<td class="style_companion"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/home.php">Home</a></td>
+</tr>
+<tr>
+<td class="style_companion"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/about-us.html">About Us</a></td>
+</tr>
+<tr>
+<td class="style_companion"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/pigs.html">Heritage Pigs</a></td>
+</tr>
+<tr>
+<td class="style_companion"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/chickens.html">Chickens</a></td>
+</tr>
+<tr>
+<td class="style_companion"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/la-mancha-goats.html">La Mancha Goats</a></td>
+</tr>
+<tr>
+<td class="style_companion"><a href="">Corriedale Sheep</a></td>
+</tr>
+<tr>
+<td><span id="disabledPageReference">Contact Info</span></td>
+</tr>
+</tbody>
+</table>
+<table id="various">
+<tbody>
+<tr>
+<td><a href="http://www.facebook.com"><img id="facebook2" src="http://img2.wikia.nocookie.net/__cb20130501121248/logopedia/images/f/fb/Facebook_icon_2013.svg"></a></td>
+</tr>
+<br>
+<br>
+<tr><td id="search_website">
+<form id="search_form" action="file:///C:/Users/Kris/Documents/Evan's%20School/search-results.php" method="get" onsubmit="return validate()">
+<input name="user-search" id="search" type="search" placeholder="Search www.briarwoodcroft.com..."> <input name="submit-search" type="submit" id="submit_search" value="Search">
+<p id="error"></p>
+</form>
+</td></tr>
+</tbody>
+</table>
+<div id="related_resources">
+<h4>Related Resources on Organic Farming:</h4>
+<ul>
+	<li><a href="http://www.livestockconservancy.org/" target="_blank">Livestock Concervancy</a></li>
+	<li><a href="http://rodaleinstitute.org/" target="_blank">Rodale Institute</a></li>
+</ul>
+</div>
+<div id="copyright">
+<p>We treat any personal information you give us with the utmost care.  While using this site, you are subject to our <a href="#">terms and conditions of use</a> and our <a href="#">cookie policy</a>.  If you have any questions or concerns, please call us at (610) 562-3338 or email us at <a href="mailto:briarwoodcroft@gmail.com">briarwoodcroft@gmail.com</a>.  Copyright &copy; 2014 by Briarwood Croft and Evan Nygard.  All rights reserved.</p>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+var field = document.getElementById("search");
+var error = document.getElementById("error");
+error.style.display = "none";
+function validate() {
+	if(field.value.length === 0) {
+		field.style.border = "1px solid red";
+		error.innerHTML = "Please enter a value into the search box before searching.";
+		error.style.display = "inline";
+		return false;
+	} else if(/[^a-zA-Z ]/.test(field.value)) {
+		field.style.border = "1px solid red";
+		error.innerHTML = "Only a-z, A-Z, and whitespace allowed in search box";
+		error.style.display = "inline";
+		return false;
+	};
+};
+</script>
+<script>
+//Declare redirect function
+function redirect(element, url) {
+document.getElementById(element).addEventListener("click", function() {
+document.location = url;
+});
+};
+//Call redirect function multiple times as shorthand for jquery click function
+redirect("home", "file:///C:/Users/Kris/Documents/Evan's%20School/home.php");
+redirect("pigs", "file:///C:/Users/Kris/Documents/Evan's%20School/pigs.html");
+redirect("chickens", "file:///C:/Users/Kris/Documents/Evan's%20School/chickens.html");
+redirect("goats", "file:///C:/Users/Kris/Documents/Evan's%20School/la-mancha-goats.html");
+redirect("contact", "file:///C:/Users/Kris/Documents/Evan's%20School/contact-info.html");
+</script>
+</body>
+ </html>
