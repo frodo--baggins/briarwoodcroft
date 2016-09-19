@@ -1,9 +1,7 @@
-<!--Website v. PROTOTYPE 0.1--> 
-<!--name="file:///C:/Users/Kris/Documents/Evan's%20School/home.html" as "http://www.briarwoodcroft.com/home"-->
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>Home | Briarwood Croft</title>
+<title>Briarwood Croft</title>
 <meta charset="utf-8"/>
 <meta name="description" content="All animals at Briarwood Croft are fed organic, non-GMO grain, pastured on organic, non-GMO grasses, and are watered with fresh-well water."/>
 <meta name="keywords" content="Briarwood, Croft, animals, organic, non-GMO, farm, fresh-well water"/>
@@ -93,25 +91,6 @@ border-top-left-radius:1em;
 <tr>
 <td id="like"><a href="http://www.facebook.com" target="_blank"><img id="facebook2" src="http://img2.wikia.nocookie.net/__cb20130501121248/logopedia/images/f/fb/Facebook_icon_2013.svg"></a></td>
 </tr>
-<br>
-<br>
-<tr><td id="search_website">
-<form id="search_form" action="file:///C:/Users/Kris/Documents/Evan's%20School/search-results.php" method="get" onsubmit="return test()">
-<input name="user-search" id="search" type="search" autocomplete="off" placeholder="Search www.briarwoodcroft.com..."> <input type="submit" name="submit-search" id="submit_search" value="Search">
-<input id="hidden" type="hidden" name="isValid" value="true">
-<p id="error" class="error"></p>
-</form>
-</td></tr>
-<?php
-$userSearch = sanitize($_GET["user-search"]);
-function sanitize($field) {
-$field = strip_tags($field);
-$field = stripslashes($field);
-$field = htmlspecialchars($field);
-return $field;
-}
-?>
-<tr><td id="searchResults"></td></tr>
 </tbody>
 </table>
 <div id="related_resources">
@@ -126,46 +105,5 @@ return $field;
 </div>
 </div>
 </div>
-<script type="text/javascript">
-var field = document.getElementById("search");
-var error = document.getElementById("error");
-error.style.display = "none";
-function test() {
-var record = []; //Keeps track of the times a user 
-				 //clicked a button and an error occurred
-if(field.value.length === 0 && record.length === 0) {
-		field.style.border = "1px solid red";
-		error.innerHTML = "Please enter a value into the search box before searching.";
-		document.getElementById("footer").style.marginBottom = "-40%";
-		error.style.display = "inline";
-		record.push("Returned false");
-		return false;
- } else if(field.value.length === 0) {
-		alert("Please inter a value into the search box before searching");
-		return false;
- } else if(/[^a-zA-Z ]/.test(field.value)) {
-		field.style.border = "1px solid red";
-		error.innerHTML = "Only letters and whitespace allowed in search box";
-		error.style.display = "inline";
-		return false;
-	};
-};
-</script>
-<script type="text/javascript">
-//Declare redirect function
-function redirect(element, url) {
-document.getElementById(element).addEventListener("click", function() {
-document.location = url;
-});
-};
-//Call redirect function multiple times as shorthand for jquery click function
-redirect("home", "file:///C:/Users/Kris/Documents/Evan's%20School/home.php");
-redirect("about", "file:///C:/Users/Kris/Documents/Evan's%20School/about-us.html");
-redirect("pigs", "file:///C:/Users/Kris/Documents/Evan's%20School/pigs.html");
-redirect("chickens", "file:///C:/Users/Kris/Documents/Evan's%20School/chickens.html");
-redirect("goats", "file:///C:/Users/Kris/Documents/Evan's%20School/la-mancha-goats.html");
-redirect("sheep", "file:///C:/Users/Kris/Documents/Evan's%20School/sheep.html");
-redirect("contact", "file:///C:/Users/Kris/Documents/Evan's%20School/contact-info.html");
-</script>
 </body>
 </html>
