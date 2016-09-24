@@ -36,12 +36,12 @@ border-top-left-radius:1em;
 	<nav>
 	<ul id="navbar_list">
 	<li id="disablednav" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\PC101953.JPG"><span id="home">Home</span></li>
-	<li id="about" class="navbar_list_item"><img class="nav_img" src="http://cdn.phillymag.com/wp-content/uploads/2012/08/farm1.jpg"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/about-us.html">About Us</a></li>
-	<li id="pigs" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P4232261.JPG"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/pigs.html">Heritage Pigs</a></li>
-	<li id="chickens" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P5041126.JPG"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/chickens.html">Chickens</a></li>
-	<li id="goats" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P4232251.JPG"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/la-mancha-goats.html">La Mancha Goats</a></li>
-	<li id="sheep" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P4202229.JPG"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/sheep.html">Corriedale Sheep</a></li>
-	<li id="contact" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\PA051606.JPG"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/contact-info.html">Contact Info</a></li>
+	<li id="about" class="navbar_list_item"><img class="nav_img" src=""><a href="about-us.html">About Us</a></li>
+	<li id="pigs" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P4232261.JPG"><a href="pigs.html">Heritage Pigs</a></li>
+	<li id="chickens" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P5041126.JPG"><a href="chickens.html">Chickens</a></li>
+	<li id="goats" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P4232251.JPG"><a href="goats.html">La Mancha Goats</a></li>
+	<li id="sheep" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P4202229.JPG"><a href="sheep.html">Corriedale Sheep</a></li>
+	<li id="contact" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\PA051606.JPG"><a href="contact-info.html">Contact Info</a></li>
 	</ul>
 	</nav>
 </div>
@@ -51,7 +51,6 @@ border-top-left-radius:1em;
 		<img id="image2" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P2242126.JPG" alt="Girls with lamb">
 		<br>
 		<div id="text2"><p>We raise Corriedale Sheep, La Mancha Goats, chickens, and Gloucestershire Old Spots pigs.  All of our animals are fed organic, non-GMO grains and graze on organic pasture.</p></div>
-		<!--<a class="next" href="file:///C:/Users/Kris/Documents/Evan's%20School/about-us.html">Next page >></a>-->
 </div>
 <br>
 <br>

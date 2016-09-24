@@ -63,13 +63,13 @@ margin-right:30%;
 </div>
 <nav>
 	<ul id="navbar_list">
-	<li id="home" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\PC101953.JPG"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/home.php">Home</a></li>
-	<li id="about" class="navbar_list_item"><img class="nav_img" src="http://cdn.phillymag.com/wp-content/uploads/2012/08/farm1.jpg"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/about-us.html">About Us</a></li>
-	<li id="pigs" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P4232261.JPG"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/pigs.html">Pigs</a></li>
+	<li id="home" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\PC101953.JPG"><a href="home.php">Home</a></li>
+	<li id="about" class="navbar_list_item"><img class="nav_img" src="http://cdn.phillymag.com/wp-content/uploads/2012/08/farm1.jpg"><a href="about-us.html">About Us</a></li>
+	<li id="pigs" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P4232261.JPG"><a href="pigs.html">Pigs</a></li>
 	<li id="disablednav" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P5041126.JPG"><span id="chickens">Chickens</span></li>
-	<li id="goats" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P4232251.JPG"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/la-mancha-goats.html">La Mancha Goats</a></li>
-	<li id="sheep" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P4202229.JPG"><a href="">Corriedale Sheep</a></li>
-	<li id="contact" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\PA051606.JPG"><a href="file:///C:/Users/Kris/Documents/Evan's%20School/contact-info.html">Contact Info</a></li>
+	<li id="goats" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P4232251.JPG"><a href="goats.html">La Mancha Goats</a></li>
+	<li id="sheep" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\P4202229.JPG"><a href="sheep.html">Corriedale Sheep</a></li>
+	<li id="contact" class="navbar_list_item"><img class="nav_img" src="C:\Users\Kris\Documents\briarwoodcroft\Pictures for website\PA051606.JPG"><a href="contact-info.html">Contact Info</a></li>
 	</ul>
 	</nav>
 </div>
@@ -116,23 +116,6 @@ margin-right:30%;
 <tr>
 <td id="like"><a href="http://www.facebook.com" target="_blank"><img id="facebook2" src="http://img2.wikia.nocookie.net/__cb20130501121248/logopedia/images/f/fb/Facebook_icon_2013.svg"></a></td>
 </tr>
-<br>
-<br>
-<tr><td id="search_website">
-<form id="search_form" action="file:///C:/Users/Kris/Documents/Evan's%20School/search-results.php" method="get" onsubmit="return test()">
-<input name="user-search" id="search" type="search" placeholder="Search www.briarwoodcroft.com..."> <input type="submit" name="submit-search" id="submit_search" value="Search">
-<p id="error"></p>
-</form>
-</td></tr>
-<?php
-$userSearch = sanitize($_GET["user-search"]);
-function sanitize($field) {
-$field = stripslashes($field);
-$field = htmlentities($field);
-return $field;
-}
-?>
-<tr><td id="searchResults"></td></tr>
 </tbody>
 </table>
 <div id="related_resources">
@@ -147,38 +130,5 @@ return $field;
 </div>
 </div>
 </div>
-<script type="text/javascript">
-var field = document.getElementById("search");
-var error = document.getElementById("error");
-error.style.display = "none";
-function test() {
-	if(field.value.length === 0) {
-		field.style.border = "1px solid red";
-		error.innerHTML = "Please enter a value into the search box before searching.";
-		error.style.display = "inline";
-		return false;
-	} else if(/[^a-zA-Z ]/.test(field.value)) {
-		field.style.border = "1px solid red";
-		error.innerHTML = "Only a-z, A-Z, and whitespace allowed in search box";
-		error.style.display = "inline";
-		return false;
-	};
-};
-</script>
-<script>
-//Declare redirect function
-function redirect(element, url) {
-document.getElementById(element).addEventListener("click", function() {
-document.location = url;
-});
-};
-//Call redirect function multiple times as shorthand for jquery click function
-redirect("home", "file:///C:/Users/Kris/Documents/Evan's%20School/home.php");
-redirect("about", "file:///C:/Users/Kris/Documents/Evan's%20School/about-us.html");
-redirect("pigs", "file:///C:/Users/Kris/Documents/Evan's%20School/pigs.html");
-redirect("chickens", "file:///C:/Users/Kris/Documents/Evan's%20School/chickens.html");
-redirect("goats", "file:///C:/Users/Kris/Documents/Evan's%20School/la-mancha-goats.html");
-redirect("contact", "file:///C:/Users/Kris/Documents/Evan's%20School/contact-info.html");
-</script>
 </body>
 </html>
